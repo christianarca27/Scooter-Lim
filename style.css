@@ -1,0 +1,106 @@
+* {
+  box-sizing: content-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+body{
+  background-image: url(background.jpg);
+  background-size: cover;
+}
+
+h2{
+  padding: 0;
+  margin: 0;
+}
+
+h3{
+  padding: 0;
+  margin : 0;
+}
+
+/* COSTRUZIONE LISTA NON RIENTRANTE CON QUADRETTI - INIZIO */
+ul{
+  list-style-type: none;
+  padding: 0;
+}
+
+li::before{
+  content: "\25A0"
+}
+
+li > h3{
+  display: inline-block;
+}
+/* COSTRUZIONE LISTA NON RIENTRANTE CON QUADRETTI - FINE */
+
+.riquadro-trasparente{
+  width: 1000px;
+  height: 650px;
+  margin: 20px auto 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.sezione-centrale{
+  width: 800px;
+  margin: auto;
+}
+
+/* HEADER - INIZIO */
+header{
+  text-align: center;
+}
+
+header > img{
+  width: 200px;
+  padding-top: 70px;
+}
+
+#motto-azienda{
+  color: rgb(0, 231, 0);
+}
+/* HEADER - FINE */
+
+/* NAVIGATORE - INIZIO */
+nav{
+  text-align: center;
+  background-color: rgb(0, 231, 0);
+  padding: 10px;
+}
+/* NAVIGATORE - FINE */
+
+/* MAIN - INIZIO */
+main{
+  color: white;
+}
+
+.stato-dispositivo{
+  margin: 0;
+  padding: 0;
+}
+
+.livello-carica{
+  height: 25px;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+}
+
+.livello-carica.piena-carica{
+  width: 500px;
+  background-color: rgb(60, 190, 60);
+}
+
+.livello-carica.media-carica{
+  width: 300px;
+  background-color: rgb(255, 180, 80);
+}
+
+.livello-carica.bassa-carica{
+  width: 100px;
+  background-color: rgb(180, 60, 60);
+}
+
+.posizione::before{
+  content: "\21A6";
+}
+/* MAIN - FINE */
